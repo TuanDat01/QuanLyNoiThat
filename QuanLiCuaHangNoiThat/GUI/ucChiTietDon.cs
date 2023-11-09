@@ -25,9 +25,9 @@ namespace GUI
         public ucChiTietDon(ChiTietDonNhap CTDonNhap, bool isSale)
         {
             InitializeComponent();
+            this.hang = HangBLL.Instance.FindById(this.CTDonNhap.MaHang);
             this.CTDonNhap = CTDonNhap;
             this.isSale = isSale;
-            this.hang = HangBLL.Instance.FindById(this.CTDonNhap.MaHang);
         }
 
         private void button1_Click(object sender, EventArgs e)
