@@ -72,8 +72,9 @@ namespace GUI
 
         private void ucChiTietDon_Load(object sender, EventArgs e)
         {
-            llbTenHang.Text = hang.TenHang.ToString();
             lbThanhTien.Text = hang.GiaNhap.ToString();
+            llbTenHang.Text = hang.TenHang.ToString();
+            
         }
     }
 }
